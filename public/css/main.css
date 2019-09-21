@@ -1,0 +1,109 @@
+/* * {
+    border: 0.5px solid red;
+} */
+
+body {
+    background-color: #aaa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.rightnavbar {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main {
+    flex: 80%;
+    background-color: white;
+    padding: 100px;
+    padding-top: 30px;
+}
+
+.photo {
+    width: 100%;
+    background-color: #aaa;
+    padding: 20px;
+}
+
+.photosatu {
+    background-image: url('../../img/porto01.png');
+}
+
+.photo-self {
+    border-radius: 15px 50px 30px;
+    background: grey;
+    padding: 20px;
+    width: 200px;
+    height: 760px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #333;
+    text-align: center;
+    color: #f1f1f1;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
